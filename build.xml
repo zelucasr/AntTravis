@@ -26,6 +26,7 @@
 
     <target name="run" depends="jar">
         <java jar="${dir.jar}/${ant.project.name}.jar" fork="true"/>
+        <echo>Echo from Ant</echo>
     </target>
 
     <target name="clean-build" depends="clean,jar"/>
